@@ -1,0 +1,193 @@
+/* General Body Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fafafa;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header Section */
+header {
+  background-color: #d32f2f;
+  color: white;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  letter-spacing: 2px;
+  animation: slideDown 1s ease-out;
+}
+
+/* Navigation Menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffccbc;
+}
+
+/* Main Content Styling */
+main {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+section {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+section h2 {
+  color: #d32f2f;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+/* Blood Resource Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0;
+}
+
+table th, table td {
+  padding: 12px 15px;
+  text-align: center;
+}
+
+table th {
+  background-color: #e57373;
+  color: white;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tr:hover {
+  background-color: #ffebee;
+  transition: background-color 0.3s ease;
+}
+
+/* Buttons Styling */
+button {
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #b71c1c;
+  transform: translateY(-3px);
+}
+
+/* Donor Section */
+#donor-info {
+  background-color: #fff3e0;
+}
+
+#donor-info p {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+/* Animations */
+@keyframes slideDown {
+  from {
+      opacity: 0;
+      transform: translateY(-50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Footer Styling */
+footer {
+  background-color: #d32f2f;
+  color: white;
+  padding: 15px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1em;
+  letter-spacing: 1px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  header h1 {
+      font-size: 2em;
+  }
+
+  nav ul {
+      flex-direction: column;
+  }
+
+  nav ul li {
+      margin: 10px 0;
+  }
+
+  section {
+      padding: 15px;
+  }
+
+  table th, table td {
+      padding: 10px;
+  }
+
+  button {
+      font-size: 1em;
+      padding: 10px 15px;
+  }
+}

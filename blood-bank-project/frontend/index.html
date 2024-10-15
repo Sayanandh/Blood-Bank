@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Blood Bank Management</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="side-nav">
+        <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="donor_registration.html"><i class="fas fa-hand-holding-medical"></i> Register as a Donor</a></li>
+        <li><a href="recipient_management.html"><i class="fas fa-users"></i> Recipient Management</a></li>
+        <li><a href="hospital_access.html"><i class="fas fa-hospital"></i> Hospital Access</a></li>
+        <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+      </ul>
+    </nav>
+    <h1>Welcome to LifeFlow - Blood Bank Management</h1>
+  </header>
+
+  <main>
+    <section id="overview">
+      <h2>Blood Donation & Bank Management Overview</h2>
+      <p>LifeFlow is dedicated to managing blood donations and facilitating safe, efficient blood transfusions for recipients. Hospitals can access real-time data on available blood resources, and donors can easily register to help save lives.</p>
+    </section>
+
+    <section id="blood-stats">
+      <h2>Available Blood Resources</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Blood Type</th>
+            <th>Units Available</th>
+            <th>Last Updated</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>A+</td>
+            <td>15 Units</td>
+            <td>October 15, 2024</td>
+          </tr>
+          <tr>
+            <td>B+</td>
+            <td>10 Units</td>
+            <td>October 15, 2024</td>
+          </tr>
+          <tr>
+            <td>O-</td>
+            <td>5 Units</td>
+            <td>October 15, 2024</td>
+          </tr>
+          <tr>
+            <td>AB+</td>
+            <td>8 Units</td>
+            <td>October 15, 2024</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="hospital-access">
+      <h2>Hospital Access to Blood Resources</h2>
+      <p>Hospitals and medical professionals can log in to check blood availability and manage recipient requests. We provide real-time data to help ensure a constant supply of the needed blood types.</p>
+      <button onclick="window.location.href='hospital_access.html'">Access Hospital Portal</button>
+    </section>
+
+    <section id="donor-info">
+      <h2>Why Donate Blood?</h2>
+      <p>Donating blood saves lives. Every donation can help up to three people in need of a transfusion. Whether you're a first-time donor or a regular, your contribution is invaluable.</p>
+      <button onclick="window.location.href='donor_registration.html'">Become a Donor</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 LifeFlow - Blood Bank Management System | All rights reserved.</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

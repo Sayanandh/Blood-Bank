@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Recipient Management - LifeFlow</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="donor_registration.html">Register as a Donor</a></li>
+        <li><a href="recipient_management.html">Recipient Management</a></li>
+        <li><a href="hospital_access.html">Hospital Access</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </nav>
+    <h1>Recipient Management</h1>
+  </header>
+
+  <main>
+    <section id="recipient-management">
+      <h2>Manage Recipients</h2>
+      <p>Below is the list of current recipients. You can add new recipients or update existing data.</p>
+      
+      <table>
+        <thead>
+          <tr>
+            <th>Recipient Name</th>
+            <th>Blood Type</th>
+            <th>Units Needed</th>
+            <th>Contact Info</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John Doe</td>
+            <td>A+</td>
+            <td>2 Units</td>
+            <td>john.doe@example.com</td>
+            <td>Pending</td>
+            <td>
+              <button class="edit-btn">Edit</button>
+              <button class="delete-btn">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Jane Smith</td>
+            <td>O-</td>
+            <td>3 Units</td>
+            <td>jane.smith@example.com</td>
+            <td>Approved</td>
+            <td>
+              <button class="edit-btn">Edit</button>
+              <button class="delete-btn">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <button class="add-recipient-btn" onclick="window.location.href='add_recipient.html'">Add New Recipient</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 LifeFlow - Blood Bank Management System | All rights reserved.</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
